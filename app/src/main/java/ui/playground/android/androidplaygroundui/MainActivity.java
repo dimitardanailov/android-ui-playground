@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button mDatepicker;
+    private Button mSimpleArrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initializeDatepicker();
+        initializeSimpleArrayAdapter();
     }
 
     private void initializeDatepicker() {
@@ -24,7 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
         mDatepicker.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                loadNewActivity(DatepickerActivity.class);
+            loadNewActivity(DatepickerActivity.class);
+            }
+        });
+    }
+
+    private void initializeSimpleArrayAdapter() {
+        mSimpleArrayAdapter = (Button) findViewById(R.id.simpleArrayAdapter);
+
+        mSimpleArrayAdapter.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                loadNewActivity(SimpleArrayAdapter.class);
             }
         });
     }

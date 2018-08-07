@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".DatepickerActivity"></activity>
+        <activity android:name=".DatepickerActivity" />
+        <activity android:name=".SimpleArrayAdapter"></activity>
     </application>
 
 </manifest>
